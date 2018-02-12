@@ -1,0 +1,5 @@
+<h3>Here are all the products of category: <%= @category.name %></h3>
+<% @products.each do |product| %>
+  <h4><%= product.name %></h4>
+<% end %>
+<%= link_to "Back to all products", products_path %>

@@ -1,16 +1,18 @@
 Rails.application.routes.draw do
+  get 'product_categories/index'
+
+  get 'product_categories/show'
+
   get 'cart_items/userIndex'
 
 
 #Product routes
-  # get '/products/:id', to: 'products#show'
+  resources :products, only: [:index, :show]
 
-  # get '/products', to: 'products#index'
+#Product  categories routes
+  resources :product_categories, only: [:index, :show]
 
-  # get '/products/filter', to: 'products#filter'
-  resources :products
-
+#Authentification
   devise_for :users
   root to: 'products#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

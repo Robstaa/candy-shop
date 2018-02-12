@@ -1,0 +1,4 @@
+<% @categories.map do |category| %>
+  <h3><%= category.name %></h3>
+<% end %>
+<%= link_to "Back to all products", products_path %>
