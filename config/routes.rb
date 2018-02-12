@@ -1,21 +1,14 @@
 Rails.application.routes.draw do
   get 'cart_items/userIndex'
 
-  get 'cart_items/new'
 
-  get 'cart_items/create'
+#Product routes
+  # get '/products/:id', to: 'products#show'
 
-  get 'cart_items/edit'
+  # get '/products', to: 'products#index'
 
-  get 'cart_items/update'
-
-  get 'cart_items/delete'
-
-  get 'products/show'
-
-  get 'products/index'
-
-  get 'products/filter'
+  # get '/products/filter', to: 'products#filter'
+  resources :products
 
   devise_for :users
   root to: 'products#index'
