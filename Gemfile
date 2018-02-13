@@ -22,6 +22,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'faker'
   gem 'better_errors', '~> 2.1', '>= 2.1.1'
+  gem "binding_of_caller"
 end
 
 group :development, :test do
