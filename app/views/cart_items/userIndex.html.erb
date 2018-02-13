@@ -2,6 +2,7 @@
 
 <ul>
   <% @cart_items.each do |item| %>
-    <li> <%= item.name  %> </li>
+    <li> <%= "#{item.name} for #{item.price}€, #{item.product_category.name} "  %>
+    </li>
   <% end  %>
 </ul>
