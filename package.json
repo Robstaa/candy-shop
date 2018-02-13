@@ -2,7 +2,7 @@
   "name": "candy-shop",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.2.1",
+    "@rails/webpacker": "^3.2.2",
     "bootstrap": "3",
     "coffeescript": "1.12.7",
     "jquery": "^3.3.1"

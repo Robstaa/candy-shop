@@ -17,10 +17,11 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
-gem 'faker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'faker'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
 end
 
 group :development, :test do
