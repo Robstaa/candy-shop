@@ -66,6 +66,7 @@ GEM
     faker (1.8.7)
       i18n (>= 0.7)
     ffi (1.9.21)
+
     figaro (1.1.1)
       thor (~> 0.14)
     font-awesome-sass (5.0.6.2)
