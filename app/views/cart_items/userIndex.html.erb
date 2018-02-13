@@ -1,2 +1,5 @@
-<h1>CartItems#userIndex</h1>
-<p>Find me in app/views/cart_items/userIndex.html.erb</p>
+<h1>Your shopping Cart</h1>
+
+<% @cart_items.each do |item| %>
+  <%= item.name  %>
+<% end  %>

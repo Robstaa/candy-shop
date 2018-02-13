@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'cart_items/userIndex'
 
-
+  post '/cart_item', to: 'cart_items#create'
 #Product routes
   resources :products, only: [:index, :show]
 

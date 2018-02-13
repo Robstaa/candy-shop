@@ -3,3 +3,4 @@
   <h5><%= @product.description %></h5>
   <h6>Category: <%= link_to @product.product_category.name, product_category_path(@product.product_category) %></h6>
   <%= link_to 'Back to overview', products_path %>
+  <%= link_to 'Add to shoping cart', cart_item_path(:product_id => @product.id), method: :post %>
