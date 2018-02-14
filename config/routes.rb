@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'cart_items/userIndex'
 
   post '/cart_item', to: 'cart_items#create'
+
+  delete '/cart_item', to: 'cart_items#destroy'
 #Product routes
   resources :products, only: [:index, :show]
 
