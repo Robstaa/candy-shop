@@ -2,7 +2,8 @@
 
 <ul>
   <% @cart_items.each do |item| %>
-    <li> <%= "#{item.name} for #{item.price}€, #{item.product_category.name} "  %>
+    <li> <%= "#{item.product.name} for #{item.product.price}€, #{item.product.product_category.name} "  %>
+         <%= link_to 'Delete', cart_item_path(:cart_item_id => item.id), method: :delete %>
     </li>
   <% end  %>
 </ul>

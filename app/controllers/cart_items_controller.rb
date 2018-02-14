@@ -1,9 +1,6 @@
 class CartItemsController < ApplicationController
   def userIndex
-    @cart_items = current_user.shopping_cart.products
-  end
-
-  def new
+    @cart_items = current_user.shopping_cart.cart_items
   end
 
   def create
@@ -29,6 +26,9 @@ class CartItemsController < ApplicationController
   def update
   end
 
-  def delete
+  def destroy
+    @cart_item = CartItem.find(params[:cart_item_id])
+    @cart_item.destroy
+    redirect_to cart_items_userIndex_path
   end
 end
